@@ -1,0 +1,75 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js start
+
+PATH: 
+  C:\Program Files\AdoptOpenJDK\jdk-8.0.292.10-hotspot\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Intel\Shared Files\cpp\bin\Intel64;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files (x86)\Yarn\bin\;C:\Program Files\nodejs\;C:\Program Files\PuTTY\;C:\Users\Chyf\AppData\Local\python2\scripts;C:\Users\Chyf\AppData\Local\python2;C:\Users\Chyf\AppData\Local\Microsoft\WindowsApps;;C:\Users\Chyf\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Chyf\AppData\Local\Yarn\bin;C:\Users\Chyf\AppData\Roaming\npm;C:\Program Files\heroku\bin
+
+Yarn version: 
+  1.22.5
+
+Node version: 
+  12.19.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  SyntaxError: C:\DevProjects\parcelTest\package.json: Unexpected token / in JSON at position 126
+      at JSON.parse (<anonymous>)
+      at C:\Program Files (x86)\Yarn\lib\cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (C:\Program Files (x86)\Yarn\lib\cli.js:310:30)
+      at C:\Program Files (x86)\Yarn\lib\cli.js:321:13
+
+npm manifest: 
+  {
+  	"name": "phaser3-parcel-template",
+  	"version": "1.0.0",
+  	"description": "A template project for Phaser 3 using Parceljs",
+  	// "scripts": {
+  	// 	"start": "parcel src/index.html -p 8000",
+  	// 	"build": "parcel build src/index.html --out-dir dist",
+  	// 	"test": "echo \"Error: no test specified\" && exit 1"
+  	// },
+  	"main": "index.js",
+      "scripts": {
+          "start": "electron ."
+      },
+  	"author": "supertommy",
+  	"license": "MIT",
+  	"repository": {
+  		"type": "git",
+  		"url": "https://github.com/ourcade/phaser3-parcel-template.git"
+  	},
+  	"homepage": "https://github.com/ourcade/phaser3-parcel-template",
+  	"devDependencies": {
+  		"@babel/core": "^7.10.5",
+  		"@babel/plugin-proposal-class-properties": "^7.10.4",
+  		"babel-eslint": "^10.1.0",
+  		"cssnano": "^5.0.8",
+  		"electron": "^15.1.2",
+  		"eslint": "^6.8.0",
+  		"minimist": ">=1.2.2",
+  		"parcel-plugin-clean-easy": "^1.0.2",
+  		"parcel-plugin-static-files-copy": "^2.4.3",
+  		"postcss": "^8.3.9"
+  	},
+  	"dependencies": {
+  		"localforage": "^1.10.0",
+  		"phaser": "^3.55.2",
+  		"sweetalert2": "^11.1.7"
+  	},
+  	"parcelCleanPaths": [
+  		"dist"
+  	],
+  	"staticFiles": {
+  		"staticPath": "public",
+  		"watcherGlob": "**"
+  	}
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
